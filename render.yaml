@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: crawler-redgifs
+    name: crawler-pornhub
     env: python
     plan: free
     buildCommand: ""
