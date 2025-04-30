@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def crawl_pornhub(limit=30):
+def crawl(limit=30):
     url = "https://www.pornhub.com/video?o=tr"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
