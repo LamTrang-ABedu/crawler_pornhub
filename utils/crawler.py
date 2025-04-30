@@ -24,7 +24,7 @@ def crawl(limit=30):
                 continue
 
             href = a_tag.get('href')
-            if not href:
+            if not href or 'viewkey=ph' not in href:
                 continue
 
             thumb = img_tag.get('data-thumb_url') or img_tag.get('src') or ''
