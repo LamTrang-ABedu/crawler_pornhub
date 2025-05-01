@@ -22,7 +22,7 @@ def extract_pornhub_video(url):
         print(f"[yt-dlp] Error: {e}")
         return None
 
-def crawl(limit=10):
+def crawl(limit=30):
     url = "https://www.pornhub.com/video?o=tr"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
