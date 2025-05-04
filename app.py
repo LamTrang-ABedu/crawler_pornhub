@@ -1,5 +1,4 @@
-from utils.crawler import crawl
-from utils.r2_manager import upload_media_list
+from utils.crawler import crawl, upload_media_list
 import threading
 import time
 from flask import Flask
@@ -9,7 +8,7 @@ app = Flask(__name__)
 def crawler_cycle():
     while True:
         print("[MediaCrawler] Start crawling pornhub...")
-        media_list = crawl()
+        media_list = crawl(source='pornhub', max_pages=100)
         if media_list:
             print("[MediaCrawler] Uploading media...")
             upload_media_list(media_list, source='pornhub')
